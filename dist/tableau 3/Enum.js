@@ -1,0 +1,16 @@
+"use strict";
+// Explication : Ensemble de constantes nommées.
+// En TypeScript, une énumération (enum) est un moyen de définir un ensemble de constantes nommées.
+// Exemple d'énumération en TypeScript
+var Couleure;
+(function (Couleure) {
+    Couleure["Rouge"] = "Rouge";
+    Couleure["Vert"] = "Vert";
+    Couleure["Bleu"] = "Bleu";
+})(Couleure || (Couleure = {}));
+// Affichage des valeurs de l'énumération
+console.log(Couleure.Rouge); // Affiche "Rouge"
+console.log(Couleure.Vert); // Affiche "Vert"
+console.log(Couleure.Bleu); // Affiche "Bleu"
+let cou = Couleure.Rouge;
+console.log(cou); // Affiche "Rouge"
